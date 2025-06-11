@@ -1,0 +1,43 @@
+{
+  "workflow": {
+    "id": "abc123",
+    "steps": [
+      {
+        "name": "Trigger",
+        "type": "HttpRequest",
+        "inputs": {
+          "method": "POST",
+          "headers": {
+            "Content-Type": "application/json"
+          },
+          "body": {
+            "user": {
+              "id": "user-001",
+              "profile": {
+                "name": "John Doe",
+                "email": "john@example.com",
+                "roles": ["admin", "editor"],
+                "preferences": {
+                  "notifications": {
+                    "email": true,
+                    "sms": false
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "name": "Response",
+        "type": "HttpResponse",
+        "inputs": {
+          "statusCode": 200,
+          "body": {
+            "message": "Success"
+          }
+        }
+      }
+    ]
+  }
+}
