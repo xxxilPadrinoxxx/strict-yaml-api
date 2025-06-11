@@ -1,0 +1,25 @@
+name: Validate YAML
+
+on:
+  pull_request:
+    paths:
+      - '**.yaml'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install PyYAML
+        run: pip install pyyaml
+
+      - name: Validate YAML
+        run: |
+          python cli/strictyaml.py examples/power-automate.yaml
