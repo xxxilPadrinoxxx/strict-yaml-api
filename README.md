@@ -93,6 +93,9 @@ python strictyaml_api/cli.py ./examples/power-automate.yaml
 
 ```text
 ✅ Valid StrictYAML
+(YAML input is safe)
+
+Converted to JSON:
 {
   "workflow": {
     "id": "abc123",
@@ -102,6 +105,9 @@ python strictyaml_api/cli.py ./examples/power-automate.yaml
   }
 }
 ```
+
+> 🔎 Note: The JSON view is for demonstration.  
+> Your file remains StrictYAML — a safe subset of YAML.
 
 > 💡 Tip: Want it globally? Use `pip install .` inside the project root.
 
@@ -125,6 +131,9 @@ Test-StrictYAML -Path ./examples/power-automate.yaml
 
 ```text
 ✅ Valid StrictYAML
+(YAML input is safe)
+
+Converted to JSON:
 {
   "workflow": {
     "id": "abc123",
@@ -134,6 +143,8 @@ Test-StrictYAML -Path ./examples/power-automate.yaml
   }
 }
 ```
+
+> 🔎 Note: JSON output is for convenience — your source remains StrictYAML.
 
 > ⚠️ Requires: PowerShell 5.1+ and the `powershell-yaml` module  
 (Install with `Install-Module powershell-yaml` if needed)
