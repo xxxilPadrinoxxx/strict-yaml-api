@@ -20,7 +20,7 @@ function Test-StrictYAML {
 
     try {
         $parsed = $yamlContent | ConvertFrom-Yaml
-        Write-Host "✅ Valid StrictYAML"
+        Write-Host "✅ Valid StrictYAML`n(YAML input is safe)`n`nConverted to JSON:"
         $parsed | ConvertTo-Json -Depth 10
     } catch {
         throw "❌ Failed to parse YAML: $_"
