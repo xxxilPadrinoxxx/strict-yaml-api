@@ -41,3 +41,8 @@ See `spec/strict-yaml-api-spec.md`
 ## License
 
 MIT
+
+## 📣 Join the Launch Discussion
+
+We’re talking about the future of YAML-based APIs here:  
+👉 [Discussion #1: Launching StrictYAML for APIs](https://github.com/xxxilPadrinoxxx/strict-yaml-api/discussions/1)
