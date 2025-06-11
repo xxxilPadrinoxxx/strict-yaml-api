@@ -34,6 +34,30 @@ YAML: 619 bytes
 JSON: 1029 bytes  
 (~40% reduction)
 
+## 🛣 Roadmap
+
+This roadmap outlines key milestones toward a stable StrictYAML specification and tooling ecosystem.
+
+### ✅ v0.1 – Strict Parsing + CLI
+- ✅ Disallow YAML anchors, aliases, and unsafe tags
+- ✅ Require explicit types (`true`, `false`, `null`)
+- ✅ Python CLI validator (`strictyaml.py`)
+- ✅ Real-world examples and benchmarks
+- ✅ Launch GitHub Action for validation
+- 📝 Spec draft in progress
+
+### 🛠 v0.2 – Schema + Validation Layer
+- ❓ Decide between JSON Schema vs YAML-native schema
+- 🧪 Schema validation for example files
+- 🧰 Improve CLI UX: config options, validation output
+- 🧼 Add unit tests and edge cases
+
+### 🚀 v1.0 – Public Release
+- 📘 Finalized StrictYAML specification
+- 📦 Publish CLI as PyPI package (`strictyaml-api`)
+- 🌐 Optional web validator or GitHub App integration
+- 📣 Community outreach and adoption
+
 ## Specification
 
 See `spec/strict-yaml-api-spec.md`
