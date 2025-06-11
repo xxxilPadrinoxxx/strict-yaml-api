@@ -58,16 +58,6 @@ This roadmap outlines key milestones toward a stable StrictYAML specification an
 - 🌐 Optional web validator or GitHub App integration
 - 📣 Community outreach and adoption
 
-## ⚡ PowerShell Support
-
-StrictYAML can also be used directly in PowerShell for validation and JSON conversion.
-
-### 📥 Import and Use
-
-```powershell
-# Import the module
-Import-Module ./powershell/StrictYAML.psm1
-
 # Validate and convert a YAML file
 Test-StrictYAML -Path ./examples/power-automate.yaml
 
@@ -83,3 +73,13 @@ MIT
 
 We’re talking about the future of YAML-based APIs here:  
 👉 [Discussion #1: Launching StrictYAML for APIs](https://github.com/xxxilPadrinoxxx/strict-yaml-api/discussions/1)
+
+## ⚡ PowerShell Support
+
+StrictYAML can also be used directly in PowerShell for validation and JSON conversion.
+
+### 📥 Import and Use
+
+```powershell
+# Import the module
+Import-Module ./powershell/StrictYAML.psm1
