@@ -71,6 +71,16 @@ MIT
 We’re talking about the future of YAML-based APIs here:  
 👉 [Discussion #1: Launching StrictYAML for APIs](https://github.com/xxxilPadrinoxxx/strict-yaml-api/discussions/1)
 
+## 🐍 Python CLI Usage
+
+You can run StrictYAML from the command line using the Python-based CLI.
+
+📦 Install (from source)
+pip install pyyaml
+
+Once installed, run the script:
+python strictyaml_api/cli.py ./examples/power-automate.yaml
+
 ## ⚡ PowerShell Support
 
 StrictYAML can also be used directly in PowerShell for validation and JSON conversion.
