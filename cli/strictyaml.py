@@ -19,7 +19,7 @@ def main():
         try:
             data = yaml.safe_load(f)
             json_data = json.dumps(data, indent=2)
-            print("✅ Valid StrictYAML")
+            print("✅ Valid StrictYAML\n(YAML input is safe)\n\nConverted to JSON:")
             print(json_data)
         except yaml.YAMLError as e:
             print("❌ YAML error:", e)
